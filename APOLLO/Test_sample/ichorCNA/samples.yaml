@@ -1,0 +1,14 @@
+ samples:
+  tumor_sample1: /bgfs/alee/LO_LAB/Personal/Daisong/Test_sample/5_mkdup/TP19-M774_FOL6151A1_S2.recal.bam
+  tumor_sample2: /bgfs/alee/LO_LAB/Personal/Daisong/Test_sample/5_mkdup/TP19-M892_FOL6151A2_S4.recal.bam
+  tumor_sample3: /bgfs/alee/LO_LAB/Personal/Daisong/Test_sample/5_mkdup/TP19-M497_FOL6151A3_S7.recal.bam  
+  tumor_sample4: /bgfs/alee/LO_LAB/Personal/Daisong/Test_sample/5_mkdup/TP19-M483_FOL6151A4_S9.recal.bam
+  tumor_sample5: /bgfs/alee/LO_LAB/Personal/Daisong/Test_sample/5_mkdup/TP19-M480_FOL6151A5_S12.recal.bam
+
+
+
+
+
+
+
+
