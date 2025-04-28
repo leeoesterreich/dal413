@@ -1,0 +1,735 @@
+nohup: ignoring input
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Step 1: Preparing CNR data...
+Reading CNR files...
+Found 57 CNR files. Processing...
+Processing TP18-M290.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP18-M290.annotated.cnr 
+Using alternative columns: TP18.M290_29.Corrected_Call and TP18.M290_29.Corrected_Copy_Number 
+Processing TP18-M434.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP18-M434.annotated.cnr 
+Using alternative columns: TP18.M434_1.Corrected_Call and TP18.M434_1.Corrected_Copy_Number 
+Processing TP18-M568.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP18-M568.annotated.cnr 
+Using alternative columns: TP18.M568_2.Corrected_Call and TP18.M568_2.Corrected_Copy_Number 
+Processing TP18-M584.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP18-M584.annotated.cnr 
+Using alternative columns: TP18.M584_42.Corrected_Call and TP18.M584_42.Corrected_Copy_Number 
+Processing TP18-M586.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP18-M586.annotated.cnr 
+Using alternative columns: TP18_M586_21.Corrected_Call and TP18_M586_21.Corrected_Copy_Number 
+Processing TP18-M588.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP18-M588.annotated.cnr 
+Using alternative columns: TP18.M588.Corrected_Call and TP18.M588.Corrected_Copy_Number 
+Processing TP18-M6051.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP18-M6051.annotated.cnr 
+Using alternative columns: TP18.M605_1.Corrected_Call and TP18.M605_1.Corrected_Copy_Number 
+Processing TP18-M627.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP18-M627.annotated.cnr 
+Using alternative columns: TP18.M627_33.Corrected_Call and TP18.M627_33.Corrected_Copy_Number 
+Processing TP18-M633.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP18-M633.annotated.cnr 
+Using alternative columns: TP18.M633_10.Corrected_Call and TP18.M633_10.Corrected_Copy_Number 
+Processing TP18-M643.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP18-M643.annotated.cnr 
+Using alternative columns: TP18.M643_1.Corrected_Call and TP18.M643_1.Corrected_Copy_Number 
+Processing TP18-M652.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP18-M652.annotated.cnr 
+Using alternative columns: TP18.M652_13.Corrected_Call and TP18.M652_13.Corrected_Copy_Number 
+Processing TP18-M681_1.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP18-M681_1.annotated.cnr 
+Using alternative columns: TP18.M681_1.Corrected_Call and TP18.M681_1.Corrected_Copy_Number 
+Processing TP18-M681_2.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP18-M681_2.annotated.cnr 
+Using alternative columns: TP18.M681_2.Corrected_Call and TP18.M681_2.Corrected_Copy_Number 
+Processing TP18-M719.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP18-M719.annotated.cnr 
+Using alternative columns: TP18.M719.Corrected_Call and TP18.M719.Corrected_Copy_Number 
+Processing TP18-M729.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP18-M729.annotated.cnr 
+Using alternative columns: TP18.M729_3.Corrected_Call and TP18.M729_3.Corrected_Copy_Number 
+Processing TP18-M732.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP18-M732.annotated.cnr 
+Using alternative columns: TP18.M732_30.Corrected_Call and TP18.M732_30.Corrected_Copy_Number 
+Processing TP18-M756.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP18-M756.annotated.cnr 
+Using alternative columns: TP18.M756_7.Corrected_Call and TP18.M756_7.Corrected_Copy_Number 
+Processing TP18-M789.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP18-M789.annotated.cnr 
+Using alternative columns: TP18.M789.Corrected_Call and TP18.M789.Corrected_Copy_Number 
+Processing TP18-M794.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP18-M794.annotated.cnr 
+Using alternative columns: TP18.M794_1.Corrected_Call and TP18.M794_1.Corrected_Copy_Number 
+Processing TP18-M838.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP18-M838.annotated.cnr 
+Using alternative columns: TP18.M838_8.Corrected_Call and TP18.M838_8.Corrected_Copy_Number 
+Processing TP18-M852.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP18-M852.annotated.cnr 
+Using alternative columns: TP18.M852_14.Corrected_Call and TP18.M852_14.Corrected_Copy_Number 
+Processing TP19-M136.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M136.annotated.cnr 
+Using alternative columns: TP19.M136.Corrected_Call and TP19.M136.Corrected_Copy_Number 
+Processing TP19-M154.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M154.annotated.cnr 
+Using alternative columns: TP19.M154_12.Corrected_Call and TP19.M154_12.Corrected_Copy_Number 
+Processing TP19-M188.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M188.annotated.cnr 
+Using alternative columns: TP19.M188_4.Corrected_Call and TP19.M188_4.Corrected_Copy_Number 
+Processing TP19-M272.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M272.annotated.cnr 
+Using alternative columns: TP19.M272_45.Corrected_Call and TP19.M272_45.Corrected_Copy_Number 
+Processing TP19-M301.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M301.annotated.cnr 
+Using alternative columns: TP19.M301_15.Corrected_Call and TP19.M301_15.Corrected_Copy_Number 
+Processing TP19-M320.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M320.annotated.cnr 
+Using alternative columns: TP19.M320_22.Corrected_Call and TP19.M320_22.Corrected_Copy_Number 
+Processing TP19-M328.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M328.annotated.cnr 
+Using alternative columns: TP19.M328_31.Corrected_Call and TP19.M328_31.Corrected_Copy_Number 
+Processing TP19-M335.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M335.annotated.cnr 
+Using alternative columns: TP19.M335_34.Corrected_Call and TP19.M335_34.Corrected_Copy_Number 
+Processing TP19-M380.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M380.annotated.cnr 
+Using alternative columns: TP19.M380_23.Corrected_Call and TP19.M380_23.Corrected_Copy_Number 
+Processing TP19-M395.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M395.annotated.cnr 
+Using alternative columns: TP19.M395_43.Corrected_Call and TP19.M395_43.Corrected_Copy_Number 
+Processing TP19-M402.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M402.annotated.cnr 
+Using alternative columns: TP19.M402_25.Corrected_Call and TP19.M402_25.Corrected_Copy_Number 
+Processing TP19-M46.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M46.annotated.cnr 
+Using alternative columns: TP19.M46_9.Corrected_Call and TP19.M46_9.Corrected_Copy_Number 
+Processing TP19-M461.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M461.annotated.cnr 
+Using alternative columns: TP19.M461_5.Corrected_Call and TP19.M461_5.Corrected_Copy_Number 
+Processing TP19-M472.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M472.annotated.cnr 
+Using alternative columns: TP19.M472_17.Corrected_Call and TP19.M472_17.Corrected_Copy_Number 
+Processing TP19-M480.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M480.annotated.cnr 
+Using alternative columns: TP19.M480_35.Corrected_Call and TP19.M480_35.Corrected_Copy_Number 
+Processing TP19-M483.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M483.annotated.cnr 
+Using alternative columns: TP19.M483_24.Corrected_Call and TP19.M483_24.Corrected_Copy_Number 
+Processing TP19-M484.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M484.annotated.cnr 
+Using alternative columns: TP19.M484_16.Corrected_Call and TP19.M484_16.Corrected_Copy_Number 
+Processing TP19-M496.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M496.annotated.cnr 
+Using alternative columns: TP19.M496_39.Corrected_Call and TP19.M496_39.Corrected_Copy_Number 
+Processing TP19-M497.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M497.annotated.cnr 
+Using alternative columns: TP19.M497_32.Corrected_Call and TP19.M497_32.Corrected_Copy_Number 
+Processing TP19-M500.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M500.annotated.cnr 
+Using alternative columns: TP19.M500_18.Corrected_Call and TP19.M500_18.Corrected_Copy_Number 
+Processing TP19-M506.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M506.annotated.cnr 
+Using alternative columns: TP19.M506_46.Corrected_Call and TP19.M506_46.Corrected_Copy_Number 
+Processing TP19-M540.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M540.annotated.cnr 
+Using alternative columns: TP19.M540_36.Corrected_Call and TP19.M540_36.Corrected_Copy_Number 
+Processing TP19-M568.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M568.annotated.cnr 
+Using alternative columns: TP19.M568_6.Corrected_Call and TP19.M568_6.Corrected_Copy_Number 
+Processing TP19-M60.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M60.annotated.cnr 
+Using alternative columns: TP19.M60_11.Corrected_Call and TP19.M60_11.Corrected_Copy_Number 
+Processing TP19-M610.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M610.annotated.cnr 
+Using alternative columns: TP19.M610_19.Corrected_Call and TP19.M610_19.Corrected_Copy_Number 
+Processing TP19-M612.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M612.annotated.cnr 
+Using alternative columns: TP19.M612_26.Corrected_Call and TP19.M612_26.Corrected_Copy_Number 
+Processing TP19-M614.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M614.annotated.cnr 
+Using alternative columns: TP19.M614_40.Corrected_Call and TP19.M614_40.Corrected_Copy_Number 
+Processing TP19-M65.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M65.annotated.cnr 
+Using alternative columns: TP19.M65_1.Corrected_Call and TP19.M65_1.Corrected_Copy_Number 
+Processing TP19-M694.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M694.annotated.cnr 
+Using alternative columns: TP19.M694_37.Corrected_Call and TP19.M694_37.Corrected_Copy_Number 
+Processing TP19-M738.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M738.annotated.cnr 
+Using alternative columns: TP19.M738_20.Corrected_Call and TP19.M738_20.Corrected_Copy_Number 
+Processing TP19-M756.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M756.annotated.cnr 
+Using alternative columns: TP19.M756_41.Corrected_Call and TP19.M756_41.Corrected_Copy_Number 
+Processing TP19-M774.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M774.annotated.cnr 
+Using alternative columns: TP19.M774_27.Corrected_Call and TP19.M774_27.Corrected_Copy_Number 
+Processing TP19-M797.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M797.annotated.cnr 
+Using alternative columns: TP19.M797_38.Corrected_Call and TP19.M797_38.Corrected_Copy_Number 
+Processing TP19-M810.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M810.annotated.cnr 
+Using alternative columns: TP19.M810_44.Corrected_Call and TP19.M810_44.Corrected_Copy_Number 
+Processing TP19-M845.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M845.annotated.cnr 
+Using alternative columns: TP19.M845_28.Corrected_Call and TP19.M845_28.Corrected_Copy_Number 
+Processing TP19-M892.annotated.cnr ...
+Warning: Required columns not found in /bgfs/alee/LO_LAB/Personal/Daisong/APOLLO/Tendo/Annotated_cnr_file_500Kb/TP19-M892.annotated.cnr 
+Using alternative columns: TP19.M892_47.Corrected_Call and TP19.M892_47.Corrected_Copy_Number 
+Converting to gene-level copy number...
+Saving processed data...
+
+Step 2: Calculating segment scores...
+Read 536 records
+Read 564944 items
+1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939495969798991001011021031041051061071081091101111121131141151161171181191201211221231241251261271281291301311321331341351361371381391401411421431441451461471481491501511521531541551561571581591601611621631641651661671681691701711721731741751761771781791801811821831841851861871881891901911921931941951961971981992002012022032042052062072082092102112122132142152162172182192202212222232242252262272282292302312322332342352362372382392402412422432442452462472482492502512522532542552562572582592602612622632642652662672682692702712722732742752762772782792802812822832842852862872882892902912922932942952962972982993003013023033043053063073083093103113123133143153163173183193203213223233243253263273283293303313323333343353363373383393403413423433443453463473483493503513523533543553563573583593603613623633643653663673683693703713723733743753763773783793803813823833843853863873883893903913923933943953963973983994004014024034044054064074084094104114124134144154164174184194204214224234244254264274284294304314324334344354364374384394404414424434444454464474484494504514524534544554564574584594604614624634644654664674684694704714724734744754764774784794804814824834844854864874884894904914924934944954964974984995005015025035045055065075085095105115125135145155165175185195205215225235245255265275285295305315325335345355361
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371
+372
+373
+374
+375
+376
+377
+378
+379
+380
+381
+382
+383
+384
+385
+386
+387
+388
+389
+390
+391
+392
+393
+394
+395
+396
+397
+398
+399
+400
+401
+402
+403
+404
+405
+406
+407
+408
+409
+410
+411
+412
+413
+414
+415
+416
+417
+418
+419
+420
+421
+422
+423
+424
+425
+426
+427
+428
+429
+430
+431
+432
+433
+434
+435
+436
+437
+438
+439
+440
+441
+442
+443
+444
+445
+446
+447
+448
+449
+450
+451
+452
+453
+454
+455
+456
+457
+458
+459
+460
+461
+462
+463
+464
+465
+466
+467
+468
+469
+470
+471
+472
+473
+474
+475
+476
+477
+478
+479
+480
+481
+482
+483
+484
+485
+486
+487
+488
+489
+490
+491
+492
+493
+494
+495
+496
+497
+498
+499
+500
+501
+502
+503
+504
+505
+506
+507
+508
+509
+510
+511
+512
+513
+514
+515
+516
+517
+518
+519
+520
+521
+522
+523
+524
+525
+526
+527
+528
+529
+530
+531
+532
+533
+534
+535
+
+Step 3: Testing associations between segment scores and signatures...
+Calculating correlations between segments...
+Error in gsub("\"", qstring, col.names, fixed = TRUE) : 
+  input string 2 is invalid in this locale
+Calls: test_associations ... eval.parent -> eval -> eval -> <Anonymous> -> paste0 -> gsub
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Execution halted
