@@ -1,0 +1,34 @@
+###For more options see: http://boevalab.com/FREEC/tutorial.html#CONFIG ###
+
+[general]
+chrLenFile = /bgfs/alee/LO_LAB/Personal/Daisong/Reference_genome/Mouse/GRCm38/GRCm38.p6.ControlREEC.fasta.fai
+ploidy = 2
+outputDir = /bgfs/alee/LO_LAB/Personal/Daisong/CPT6/ControlFREEC/Result_2
+
+sex=XX
+breakPointType=4
+chrFiles =  /bgfs/alee/LO_LAB/Personal/Daisong/Reference_genome/Mouse/GRCm38
+
+maxThreads=8
+
+breakPointThreshold=0.8
+noisyData=TRUE
+printNA=FALSE
+
+readCountThreshold=50
+
+[sample]
+
+mateFile = /bgfs/alee/LO_LAB/Personal/Daisong/CPT6/Preprocessing/4_mkdup/B6ILC-cellsrg.mkdp.bam
+inputFormat = BAM
+mateOrientation = FR
+
+[control]
+
+mateFile = /bgfs/alee/LO_LAB/Personal/Daisong/CPT6/Preprocessing/4_mkdup/BL6-mouse-liverrg.mkdp.bam
+inputFormat = BAM
+mateOrientation = FR
+
+[target]
+
+captureRegions = /bgfs/alee/LO_LAB/Personal/Daisong/CPT6/reference/ControlFREEC/Twist_Mouse_Exome_Target_Rev1_GRCm38_tab1.bed
