@@ -1,0 +1,12 @@
+#!/bin/sh
+# properties = {"type": "single", "rule": "GC_counts", "local": false, "input": ["/ix1/alee/LO_LAB/General/Lab_Data/20250610_ILC_ctDNA_shWGS_01_Daisong/bam/TP20-M300.bam"], "output": ["results_batch4/GC_counts/TP20-M300.GC_counts.txt"], "wildcards": {"out_dir": "results_batch4", "samples": "TP20-M300"}, "params": {"sample_name": "TP20-M300", "mappable_regions_path": "/ix1/alee/LO_LAB/Personal/Daisong/Projects/APOLLO/shWGS/Griffin/Ref/k100_minus_exclusion_lists.mappable_regions.hg38.bed", "ref_seq": "/ix1/alee/LO_LAB/Personal/Daisong/Projects/APOLLO/shWGS/Griffin/Ref/hg38.fa", "chrom_sizes": "/ix1/alee/LO_LAB/Personal/Daisong/Projects/APOLLO/shWGS/Griffin/Ref/hg38.standard.chrom.sizes", "map_q": 20, "size_range": "15 500", "CPU": 8, "griffin_GC_counts_script": "/ix1/alee/LO_LAB/Personal/Daisong/Projects/APOLLO/shWGS/Griffin/scripts//griffin_GC_counts.py"}, "log": [], "threads": 1, "resources": {}, "jobid": 2, "cluster": {"time": "48:0:0", "mem": "8G", "ncpus": 8, "ntasks": 1, "output": "logs/cluster/GC_counts.TP20-M300.%A.out", "JobName": "GC_counts.TP20-M300"}}
+ cd /ix1/alee/LO_LAB/Personal/Daisong/Projects/APOLLO/shWGS/Griffin/griffin_GC_and_mappability_correction && \
+/ix1/alee/LO_LAB/Personal/Daisong/griffin_env_new/bin/python \
+-m snakemake results_batch4/GC_counts/TP20-M300.GC_counts.txt --snakefile /ix1/alee/LO_LAB/Personal/Daisong/Projects/APOLLO/shWGS/Griffin/griffin_GC_and_mappability_correction/griffin_GC_and_mappability_correction.snakefile \
+--force -j --keep-target-files --keep-remote \
+--wait-for-files /ix1/alee/LO_LAB/Personal/Daisong/Projects/APOLLO/shWGS/Griffin/griffin_GC_and_mappability_correction/.snakemake/tmp.2gak07n0 /ix1/alee/LO_LAB/General/Lab_Data/20250610_ILC_ctDNA_shWGS_01_Daisong/bam/TP20-M300.bam --latency-wait 60 \
+ --attempt 1 --force-use-threads \
+--wrapper-prefix https://github.com/snakemake/snakemake-wrappers/raw/ \
+ --configfiles /ix1/alee/LO_LAB/Personal/Daisong/Projects/APOLLO/shWGS/Griffin/griffin_GC_and_mappability_correction/config/config.yaml  --allowed-rules GC_counts --nocolor --notemp --no-hooks --nolock \
+--mode 2  && touch /ix1/alee/LO_LAB/Personal/Daisong/Projects/APOLLO/shWGS/Griffin/griffin_GC_and_mappability_correction/.snakemake/tmp.2gak07n0/2.jobfinished || (touch /ix1/alee/LO_LAB/Personal/Daisong/Projects/APOLLO/shWGS/Griffin/griffin_GC_and_mappability_correction/.snakemake/tmp.2gak07n0/2.jobfailed; exit 1)
+
