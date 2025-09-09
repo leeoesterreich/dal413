@@ -1,0 +1,1167 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>citegeist_model &#8212; CITEgeist  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_modules/citegeist_model';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">CITEgeist  documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Documentation:</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../api.html">API Reference</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/leeoesterreich/CITEgeist" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <h1>Source code for citegeist_model</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Standard library imports</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Any</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Tuple</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Union</span>
+
+
+<span class="c1"># Third-party imports</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">scanpy</span> <span class="k">as</span> <span class="nn">sc</span>
+<span class="kn">import</span> <span class="nn">pyarrow.parquet</span> <span class="k">as</span> <span class="nn">pq</span>
+<span class="kn">from</span> <span class="nn">scipy.ndimage</span> <span class="kn">import</span> <span class="n">gaussian_filter</span>
+
+<span class="c1"># Local imports with fallback for direct script execution</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">.gurobi_impl</span> <span class="kn">import</span> <span class="p">(</span>
+        <span class="n">map_antibodies_to_profiles</span><span class="p">,</span>
+        <span class="n">optimize_cell_proportions</span><span class="p">,</span>
+        <span class="n">optimize_gene_expression</span><span class="p">,</span>
+        <span class="n">compute_global_prior</span><span class="p">,</span>
+        <span class="n">normalize_counts</span><span class="p">,</span>
+        <span class="n">finetune_cell_proportions</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="kn">from</span> <span class="nn">.utils</span> <span class="kn">import</span> <span class="p">(</span>
+        <span class="n">validate_cell_profile_dict</span><span class="p">,</span>
+        <span class="n">cleanup_memory</span><span class="p">,</span>
+        <span class="n">setup_logging</span><span class="p">,</span>
+        <span class="n">get_neighbors_with_fixed_radius</span><span class="p">,</span>
+        <span class="n">assert_neighborhood_size</span><span class="p">,</span>
+        <span class="n">export_anndata_layers</span><span class="p">,</span>
+    <span class="p">)</span>
+<span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>  <span class="c1"># pragma: no cover - allow running as a script without package context</span>
+    <span class="kn">from</span> <span class="nn">gurobi_impl</span> <span class="kn">import</span> <span class="p">(</span>  <span class="c1"># type: ignore</span>
+        <span class="n">map_antibodies_to_profiles</span><span class="p">,</span>
+        <span class="n">optimize_cell_proportions</span><span class="p">,</span>
+        <span class="n">optimize_gene_expression</span><span class="p">,</span>
+        <span class="n">compute_global_prior</span><span class="p">,</span>
+        <span class="n">normalize_counts</span><span class="p">,</span>
+        <span class="n">finetune_cell_proportions</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="kn">from</span> <span class="nn">utils</span> <span class="kn">import</span> <span class="p">(</span>  <span class="c1"># type: ignore</span>
+        <span class="n">validate_cell_profile_dict</span><span class="p">,</span>
+        <span class="n">cleanup_memory</span><span class="p">,</span>
+        <span class="n">setup_logging</span><span class="p">,</span>
+        <span class="n">get_neighbors_with_fixed_radius</span><span class="p">,</span>
+        <span class="n">assert_neighborhood_size</span><span class="p">,</span>
+        <span class="n">export_anndata_layers</span><span class="p">,</span>
+    <span class="p">)</span>
+
+
+<div class="viewcode-block" id="CitegeistModel"><a class="viewcode-back" href="../api.html#citegeist_model.CitegeistModel">[docs]</a><span class="k">class</span> <span class="nc">CitegeistModel</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sample_name</span><span class="p">,</span> <span class="n">adata</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">output_folder</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">simulation</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">gene_expression_adata</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">antibody_capture_adata</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialize the CitegeistModel with an AnnData object and output folder.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            adata (AnnData, optional): Spatial transcriptomics data object.</span>
+<span class="sd">            output_folder (str): Path to save results and outputs.</span>
+<span class="sd">            simulation (bool): Flag indicating if the data comes from a simulation framework.</span>
+<span class="sd">            gene_expression_adata (AnnData, optional): Gene expression AnnData object (for simulations).</span>
+<span class="sd">            antibody_capture_adata (AnnData, optional): Antibody capture AnnData object (for simulations).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">simulation</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">gene_expression_adata</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">antibody_capture_adata</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                    <span class="s2">&quot;In simulation mode, both `gene_expression_adata` and `antibody_capture_adata` must be provided.&quot;</span>
+                <span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span> <span class="o">=</span> <span class="n">gene_expression_adata</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">antibody_capture_adata</span> <span class="o">=</span> <span class="n">antibody_capture_adata</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">adata</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># Clear `adata` since separate datasets are provided</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">adata</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;In non-simulation mode, `adata` must be provided.&quot;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">adata</span> <span class="o">=</span> <span class="n">adata</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span> <span class="o">=</span> <span class="kc">None</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">antibody_capture_adata</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">sample_name</span> <span class="o">=</span> <span class="n">sample_name</span>
+            
+        <span class="k">if</span> <span class="n">output_folder</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;output_folder must be provided&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">output_folder</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">output_folder</span><span class="p">)</span>  <span class="c1"># Ensure string type</span>
+
+        
+        <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">output_folder</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">setup_logging</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">output_folder</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">sample_name</span><span class="p">)</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">results</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cell_profile_dict</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">preprocessed_gex</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">preprocessed_antibody</span> <span class="o">=</span> <span class="kc">False</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CitegeistModel initialized successfully.&quot;</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Developer-friendly representation of the CitegeistModel.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;&lt;CitegeistModel(adata=</span><span class="si">{</span><span class="s1">&#39;Loaded&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="bp">self</span><span class="o">.</span><span class="n">adata</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;Not Loaded&#39;</span><span class="si">}</span><span class="s2">, &quot;</span>
+            <span class="sa">f</span><span class="s2">&quot;gene_expression_adata=</span><span class="si">{</span><span class="s1">&#39;Loaded&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;Not Loaded&#39;</span><span class="si">}</span><span class="s2">, &quot;</span>
+            <span class="sa">f</span><span class="s2">&quot;antibody_capture_adata=</span><span class="si">{</span><span class="s1">&#39;Loaded&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="bp">self</span><span class="o">.</span><span class="n">antibody_capture_adata</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;Not Loaded&#39;</span><span class="si">}</span><span class="s2">, &quot;</span>
+            <span class="sa">f</span><span class="s2">&quot;cell_profile_dict=</span><span class="si">{</span><span class="s1">&#39;Loaded&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="bp">self</span><span class="o">.</span><span class="n">cell_profile_dict</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;Not Loaded&#39;</span><span class="si">}</span><span class="s2">, &quot;</span>
+            <span class="sa">f</span><span class="s2">&quot;preprocessed_gex=</span><span class="si">{</span><span class="s1">&#39;Yes&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="bp">self</span><span class="o">.</span><span class="n">preprocessed_gex</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;No&#39;</span><span class="si">}</span><span class="s2">, &quot;</span>
+            <span class="sa">f</span><span class="s2">&quot;preprocessed_antibody=</span><span class="si">{</span><span class="s1">&#39;Yes&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="bp">self</span><span class="o">.</span><span class="n">preprocessed_antibody</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;No&#39;</span><span class="si">}</span><span class="s2">, &quot;</span>
+            <span class="sa">f</span><span class="s2">&quot;output_folder=&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">output_folder</span><span class="si">}</span><span class="s2">&#39;)&gt;&quot;</span>
+        <span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        User-friendly representation of the CitegeistModel.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">details</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="s2">&quot;CitegeistModel Summary:&quot;</span><span class="p">,</span>
+            <span class="sa">f</span><span class="s2">&quot;- Output Folder: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">output_folder</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+            <span class="sa">f</span><span class="s2">&quot;- Main AnnData Loaded: </span><span class="si">{</span><span class="s1">&#39;Yes&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="bp">self</span><span class="o">.</span><span class="n">adata</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;No&#39;</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+            <span class="sa">f</span><span class="s2">&quot;- Gene Expression AnnData Loaded: </span><span class="si">{</span><span class="s1">&#39;Yes&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;No&#39;</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+            <span class="sa">f</span><span class="s2">&quot;- Antibody Capture AnnData Loaded: </span><span class="si">{</span><span class="s1">&#39;Yes&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="bp">self</span><span class="o">.</span><span class="n">antibody_capture_adata</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;No&#39;</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+            <span class="sa">f</span><span class="s2">&quot;- Cell Profile Dictionary Loaded: </span><span class="si">{</span><span class="s1">&#39;Yes&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="bp">self</span><span class="o">.</span><span class="n">cell_profile_dict</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;No&#39;</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+            <span class="sa">f</span><span class="s2">&quot;- Gene Expression Preprocessed: </span><span class="si">{</span><span class="s1">&#39;Yes&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="bp">self</span><span class="o">.</span><span class="n">preprocessed_gex</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;No&#39;</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+            <span class="sa">f</span><span class="s2">&quot;- Antibody Capture Preprocessed: </span><span class="si">{</span><span class="s1">&#39;Yes&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="bp">self</span><span class="o">.</span><span class="n">preprocessed_antibody</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;No&#39;</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+        <span class="p">]</span>
+        <span class="k">return</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">details</span><span class="p">)</span>
+    
+    
+<div class="viewcode-block" id="CitegeistModel.register_gurobi"><a class="viewcode-back" href="../api.html#citegeist_model.CitegeistModel.register_gurobi">[docs]</a>    <span class="k">def</span> <span class="nf">register_gurobi</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">license_file_path</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Configure Gurobi by setting only the license file path.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            license_file_path (str): Path to the Gurobi license file.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">license_file_path</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;❌ License file not found at: </span><span class="si">{</span><span class="n">license_file_path</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Set only the license file environment variable</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;GRB_LICENSE_FILE&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">license_file_path</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✅ Gurobi license file has been successfully configured.&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot; - GRB_LICENSE_FILE: </span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;GRB_LICENSE_FILE&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+        
+    <span class="c1"># -----------------------------------------</span>
+    <span class="c1"># Data Splitting</span>
+    <span class="c1"># -----------------------------------------</span>
+        
+<div class="viewcode-block" id="CitegeistModel.split_adata"><a class="viewcode-back" href="../api.html#citegeist_model.CitegeistModel.split_adata">[docs]</a>    <span class="k">def</span> <span class="nf">split_adata</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Split the AnnData object into separate gene expression and antibody capture sub-objects</span>
+<span class="sd">        based on &#39;feature_types&#39; in `adata.var`.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            None</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">adata</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;No valid data loaded. Ensure `adata` or split datasets are loaded properly.&quot;</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="s1">&#39;feature_types&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">adata</span><span class="o">.</span><span class="n">var</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;The &#39;feature_types&#39; column is missing in `adata.var`. Cannot split data.&quot;</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">adata</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;No valid data loaded. Ensure `adata` or split datasets are loaded properly.&quot;</span><span class="p">)</span>
+
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">adata</span><span class="o">.</span><span class="n">var_names_make_unique</span><span class="p">()</span>
+        
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">antibody_capture_adata</span> <span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                    <span class="s2">&quot;Data seems to already be split&quot;</span>
+                <span class="p">)</span>
+
+        <span class="c1"># Identify indices for Gene Expression and Antibody Capture</span>
+        <span class="n">gene_expression_idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">adata</span><span class="o">.</span><span class="n">var</span><span class="p">[</span><span class="s1">&#39;feature_types&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Gene Expression&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">antibody_capture_idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">adata</span><span class="o">.</span><span class="n">var</span><span class="p">[</span><span class="s1">&#39;feature_types&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Antibody Capture&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">gene_expression_idx</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;No &#39;Gene Expression&#39; features found in `adata.var[&#39;feature_types&#39;]`.&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">antibody_capture_idx</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;No &#39;Antibody Capture&#39; features found in `adata.var[&#39;feature_types&#39;]`.&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Split AnnData object</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">adata</span><span class="p">[:,</span> <span class="n">gene_expression_idx</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">antibody_capture_adata</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">adata</span><span class="p">[:,</span> <span class="n">antibody_capture_idx</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;AnnData has been successfully split into &#39;gene_expression_adata&#39; and &#39;antibody_capture_adata&#39;.&quot;</span><span class="p">)</span></div>
+
+
+    <span class="c1"># -----------------------------------------</span>
+    <span class="c1"># Utility Functions</span>
+    <span class="c1"># -----------------------------------------</span>
+<div class="viewcode-block" id="CitegeistModel.winsorize"><a class="viewcode-back" href="../api.html#citegeist_model.CitegeistModel.winsorize">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">winsorize</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">lower_percentile</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">upper_percentile</span><span class="o">=</span><span class="mi">95</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Winsorize a 2D NumPy array.&quot;&quot;&quot;</span>
+        <span class="n">lower_bound</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">lower_percentile</span><span class="p">)</span>
+        <span class="n">upper_bound</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">upper_percentile</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">lower_bound</span><span class="p">,</span> <span class="n">upper_bound</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="CitegeistModel.row_normalize"><a class="viewcode-back" href="../api.html#citegeist_model.CitegeistModel.row_normalize">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">row_normalize</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">target_sum</span><span class="o">=</span><span class="mf">1e4</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Row normalize a 2D NumPy array to a fixed target sum.&quot;&quot;&quot;</span>
+        <span class="n">row_sums</span> <span class="o">=</span> <span class="n">matrix</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">keepdims</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">normalized</span> <span class="o">=</span> <span class="p">(</span><span class="n">matrix</span> <span class="o">/</span> <span class="n">row_sums</span><span class="p">)</span> <span class="o">*</span> <span class="n">target_sum</span>
+        <span class="k">return</span> <span class="n">normalized</span></div>
+
+<div class="viewcode-block" id="CitegeistModel.global_clr"><a class="viewcode-back" href="../api.html#citegeist_model.CitegeistModel.global_clr">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">global_clr</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">epsilon</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Apply margin=2 CLR normalization (global geometric mean per marker).</span>
+<span class="sd">        Args:</span>
+<span class="sd">            matrix (numpy.ndarray): Input matrix (spots x markers).</span>
+<span class="sd">            epsilon (float): Small constant to avoid division by zero.</span>
+<span class="sd">        Returns:</span>
+<span class="sd">            numpy.ndarray: CLR-normalized matrix.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">matrix</span> <span class="o">=</span> <span class="n">matrix</span> <span class="o">+</span> <span class="n">epsilon</span>  <span class="c1"># Avoid division by zero</span>
+        <span class="n">geom_mean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">matrix</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
+        <span class="n">normalized_matrix</span> <span class="o">=</span> <span class="n">matrix</span> <span class="o">/</span> <span class="n">geom_mean</span>
+        <span class="k">return</span> <span class="n">normalized_matrix</span></div>
+
+<div class="viewcode-block" id="CitegeistModel.load_cell_profile_dict"><a class="viewcode-back" href="../api.html#citegeist_model.CitegeistModel.load_cell_profile_dict">[docs]</a>    <span class="k">def</span> <span class="nf">load_cell_profile_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cell_profile_dict</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Load and validate the cell profile dictionary.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            cell_profile_dict (dict): Dictionary of cell type profiles.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">validate_cell_profile_dict</span><span class="p">(</span><span class="n">cell_profile_dict</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">cell_profile_dict</span> <span class="o">=</span> <span class="n">cell_profile_dict</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Invalid cell_profile_dict format.&quot;</span><span class="p">)</span></div>
+
+    <span class="c1"># -----------------------------------------</span>
+    <span class="c1"># Preprocessing Functions</span>
+    <span class="c1"># -----------------------------------------</span>
+    
+<div class="viewcode-block" id="CitegeistModel.filter_gex"><a class="viewcode-back" href="../api.html#citegeist_model.CitegeistModel.filter_gex">[docs]</a>    <span class="k">def</span> <span class="nf">filter_gex</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nonzero_percentage</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">mean_expression_threshold</span><span class="o">=</span><span class="mf">1.1</span><span class="p">,</span> <span class="n">min_counts</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Filter genes in the gene expression AnnData object based on user-defined criteria.</span>
+
+<span class="sd">        Filters genes that have:</span>
+<span class="sd">        1. A count &gt; 0 in at least `nonzero_percentage` of spots</span>
+<span class="sd">        2. Mean expression &gt; `mean_expression_threshold` in nonzero spots</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            nonzero_percentage (float): Minimum percentage of spots where a gene must have a count &gt; 0 (default: 1%)</span>
+<span class="sd">            mean_expression_threshold (float): Minimum mean expression value in nonzero spots</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Gene expression data has not been split. Run `split_adata` first.&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Extract the data matrix</span>
+        <span class="n">matrix</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">X</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">X</span><span class="p">,</span> <span class="s1">&#39;toarray&#39;</span><span class="p">)</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">X</span>
+        <span class="n">matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>  <span class="c1"># Ensure dense matrix</span>
+
+        <span class="c1"># Calculate the number of spots</span>
+        <span class="n">num_spots</span> <span class="o">=</span> <span class="n">matrix</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+        <span class="c1"># First filter: minimum percentage of nonzero spots</span>
+        <span class="n">count_filter</span> <span class="o">=</span> <span class="p">(</span><span class="n">matrix</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="p">(</span><span class="n">nonzero_percentage</span> <span class="o">*</span> <span class="n">num_spots</span><span class="p">)</span>
+
+        <span class="c1"># Calculate mean expression in nonzero spots for each gene</span>
+        <span class="n">nonzero_means</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">matrix</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">matrix</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+            <span class="n">nonzero_vals</span> <span class="o">=</span> <span class="n">matrix</span><span class="p">[:,</span> <span class="n">j</span><span class="p">][</span><span class="n">matrix</span><span class="p">[:,</span> <span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">]</span>
+            <span class="n">nonzero_means</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">nonzero_vals</span><span class="p">)</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">nonzero_vals</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span>
+
+        <span class="c1"># Second filter: mean expression in nonzero spots</span>
+        <span class="n">mean_filter</span> <span class="o">=</span> <span class="n">nonzero_means</span> <span class="o">&gt;</span> <span class="n">mean_expression_threshold</span>
+
+        <span class="c1"># Combine filters</span>
+        <span class="n">col_filter</span> <span class="o">=</span> <span class="n">count_filter</span> <span class="o">&amp;</span> <span class="n">mean_filter</span>
+
+        <span class="c1"># Apply the filter and subset the AnnData object</span>
+        <span class="n">filtered_gene_count</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">col_filter</span><span class="p">)</span>
+        <span class="n">initial_gene_count</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="p">[:,</span> <span class="n">col_filter</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+        <span class="n">initial_spot_count</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+        <span class="n">sc</span><span class="o">.</span><span class="n">pp</span><span class="o">.</span><span class="n">filter_cells</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="p">,</span> <span class="n">min_counts</span><span class="o">=</span><span class="n">min_counts</span><span class="p">)</span>
+        
+
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Filtered gene expression data: </span><span class="si">{</span><span class="n">initial_gene_count</span><span class="si">}</span><span class="s2"> → </span><span class="si">{</span><span class="n">filtered_gene_count</span><span class="si">}</span><span class="s2"> genes &quot;</span>
+              <span class="sa">f</span><span class="s2">&quot;(count &gt; 0 in at least </span><span class="si">{</span><span class="n">nonzero_percentage</span><span class="o">*</span><span class="mi">100</span><span class="si">}</span><span class="s2">% of spots, mean expression &gt; </span><span class="si">{</span><span class="n">mean_expression_threshold</span><span class="si">}</span><span class="s2"> &quot;</span>
+              <span class="sa">f</span><span class="s2">&quot;in nonzero spots). Remaining spots: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2"> &quot;</span>
+              <span class="sa">f</span><span class="s2">&quot;Filtered spots: </span><span class="si">{</span><span class="n">initial_spot_count</span><span class="si">}</span><span class="s2"> to </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="CitegeistModel.copy_gex_to_protein_adata"><a class="viewcode-back" href="../api.html#citegeist_model.CitegeistModel.copy_gex_to_protein_adata">[docs]</a>    <span class="k">def</span> <span class="nf">copy_gex_to_protein_adata</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Copy the number of spots in the gene expression AnnData object to the antibody capture AnnData object.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">antibody_capture_adata</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Antibody capture data has not been split. Run `split_adata` first.&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Gene expression data has not been split. Run `split_adata` first.&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Get the spot names from gene expression data</span>
+        <span class="n">gex_spots</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">obs_names</span><span class="p">)</span>
+
+        <span class="c1"># Filter antibody capture data to keep only spots present in gene expression data</span>
+        <span class="n">filtered_spots</span> <span class="o">=</span> <span class="p">[</span><span class="n">spot</span> <span class="k">for</span> <span class="n">spot</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">antibody_capture_adata</span><span class="o">.</span><span class="n">obs_names</span> <span class="k">if</span> <span class="n">spot</span> <span class="ow">in</span> <span class="n">gex_spots</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">filtered_spots</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;No matching spots found between gene expression and antibody capture data.&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">antibody_capture_adata</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">antibody_capture_adata</span><span class="p">[</span><span class="n">filtered_spots</span><span class="p">,</span> <span class="p">:]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+        <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Filtered antibody capture data to </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">filtered_spots</span><span class="p">)</span><span class="si">}</span><span class="s2"> spots present in gene expression data.&quot;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="CitegeistModel.preprocess_gex"><a class="viewcode-back" href="../api.html#citegeist_model.CitegeistModel.preprocess_gex">[docs]</a>    <span class="k">def</span> <span class="nf">preprocess_gex</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target_sum</span><span class="o">=</span><span class="mi">10000</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Preprocess gene expression data with count-preserving normalization.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Gene expression data has not been split. Run `split_adata` first.&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Normalize while preserving counts</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span> <span class="o">=</span> <span class="n">normalize_counts</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="p">,</span> <span class="n">target_sum</span><span class="o">=</span><span class="n">target_sum</span><span class="p">)</span>
+        
+        <span class="c1"># Validate integer format</span>
+        <span class="n">matrix</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">X</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="s1">&#39;toarray&#39;</span><span class="p">):</span>
+            <span class="n">matrix</span> <span class="o">=</span> <span class="n">matrix</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span>
+        
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">equal</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mod</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="mi">0</span><span class="p">)):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Gene expression data contains non-integer values after normalization.&quot;</span><span class="p">)</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">preprocessed_gex</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Gene expression data normalized to </span><span class="si">{</span><span class="n">target_sum</span><span class="si">}</span><span class="s2"> counts per spot and validated for discrete count analysis.&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="CitegeistModel.preprocess_antibody"><a class="viewcode-back" href="../api.html#citegeist_model.CitegeistModel.preprocess_antibody">[docs]</a>    <span class="k">def</span> <span class="nf">preprocess_antibody</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Preprocess antibody capture data:</span>
+<span class="sd">        - Winsorize extreme values.</span>
+<span class="sd">        - Apply Gaussian smoothing for local background correction.</span>
+<span class="sd">        - Apply global CLR normalization.</span>
+<span class="sd">        - Raise an error if NaNs or Infs are detected in the processed data.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">antibody_capture_adata</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Antibody capture data has not been split. Run `split_adata` first.&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Step 1: Extract and ensure matrix is dense</span>
+        <span class="n">matrix</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">antibody_capture_adata</span><span class="o">.</span><span class="n">X</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">antibody_capture_adata</span><span class="o">.</span><span class="n">X</span><span class="p">,</span> <span class="s1">&#39;toarray&#39;</span><span class="p">)</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">antibody_capture_adata</span><span class="o">.</span><span class="n">X</span>
+        <span class="n">matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
+
+        <span class="c1"># Step 2: Validate initial data (no NaNs or Infs at start)</span>
+        <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span><span class="o">.</span><span class="n">any</span><span class="p">()</span> <span class="ow">or</span> <span class="n">np</span><span class="o">.</span><span class="n">isinf</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span><span class="o">.</span><span class="n">any</span><span class="p">():</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Antibody capture matrix contains NaN or Inf values before preprocessing.&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Step 3: Winsorize to cap extreme values</span>
+        <span class="n">matrix</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">winsorize</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">lower_percentile</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">upper_percentile</span><span class="o">=</span><span class="mi">95</span><span class="p">)</span>
+
+        <span class="n">column_sums</span> <span class="o">=</span> <span class="n">matrix</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">zero_columns</span> <span class="o">=</span> <span class="n">column_sums</span> <span class="o">==</span> <span class="mi">0</span>
+        <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">any</span><span class="p">(</span><span class="n">zero_columns</span><span class="p">):</span>
+            <span class="n">matrix</span><span class="p">[:,</span> <span class="n">zero_columns</span><span class="p">]</span> <span class="o">+=</span> <span class="mf">1e-6</span>
+
+        <span class="c1"># Step 5: Apply CLR Normalization</span>
+        <span class="n">matrix</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">global_clr</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
+
+        <span class="c1"># Step 6: Final Validation for NaNs or Infs</span>
+        <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span><span class="o">.</span><span class="n">any</span><span class="p">()</span> <span class="ow">or</span> <span class="n">np</span><span class="o">.</span><span class="n">isinf</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span><span class="o">.</span><span class="n">any</span><span class="p">():</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;NaN or Inf values detected in antibody capture matrix after preprocessing.&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Step 7: Reassign processed matrix to AnnData object</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">antibody_capture_adata</span><span class="o">.</span><span class="n">X</span> <span class="o">=</span> <span class="n">matrix</span>
+
+        <span class="c1"># Update status flag</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">preprocessed_antibody</span> <span class="o">=</span> <span class="kc">True</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Antibody capture data preprocessing completed: Winsorized, CLR applied, no NaNs detected.&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="CitegeistModel.run_cell_proportion_model"><a class="viewcode-back" href="../api.html#citegeist_model.CitegeistModel.run_cell_proportion_model">[docs]</a>    <span class="k">def</span> <span class="nf">run_cell_proportion_model</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tolerance</span><span class="o">=</span><span class="mf">1e-4</span><span class="p">,</span> <span class="n">max_iterations</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">lambda_reg</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">max_y_change</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">checkpoint_interval</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Orchestrates the cell proportion optimization workflow.</span>
+<span class="sd">        Delegates optimization to `optimize_cell_proportions` and `finetune_cell_proportions` in `gurobi_impl.py`.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            tolerance (float): Convergence tolerance for EM algorithm</span>
+<span class="sd">            max_iterations (int): Maximum number of iterations</span>
+<span class="sd">            lambda_reg (float): Regularization strength</span>
+<span class="sd">            alpha (float): L1-L2 tradeoff factor (0 = L2, 1 = L1)</span>
+<span class="sd">            max_workers (int, optional): Maximum number of parallel workers for finetuning</span>
+<span class="sd">            checkpoint_interval (int): Number of spots between checkpoints during finetuning</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="n">radius</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Radius must be provided. Run `run_cell_proportion_model` with a radius argument.&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">adata</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">antibody_capture_adata</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;No valid data loaded. Ensure `adata` or split datasets are loaded properly.&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">cell_profile_dict</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Cell profile dictionary has not been loaded. Run `load_cell_profile_dict` first.&quot;</span><span class="p">)</span>
+
+        <span class="n">profile_based_antibody_data</span><span class="p">,</span> <span class="n">cell_type_names</span> <span class="o">=</span> <span class="n">map_antibodies_to_profiles</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">antibody_capture_adata</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">cell_profile_dict</span><span class="p">)</span>
+        
+        <span class="n">Y_values</span><span class="p">,</span> <span class="n">beta_values</span> <span class="o">=</span> <span class="n">optimize_cell_proportions</span><span class="p">(</span><span class="n">profile_based_antibody_data</span><span class="p">,</span> <span class="n">cell_type_names</span><span class="p">)</span>
+        
+        <span class="c1"># Create finetuning output directory</span>
+        <span class="n">finetune_output_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">output_folder</span><span class="p">,</span> <span class="s2">&quot;cell_prop_finetuning&quot;</span><span class="p">)</span>
+        
+        <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">finetune_output_dir</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">antibody_capture_adata</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Antibody capture data has not been split. Run `split_adata` first.&quot;</span><span class="p">)</span>
+        
+        <span class="n">Y_prev</span><span class="p">,</span> <span class="n">beta_prev</span> <span class="o">=</span> <span class="n">finetune_cell_proportions</span><span class="p">(</span>
+            <span class="n">profile_based_antibody_data</span><span class="p">,</span> 
+            <span class="n">cell_type_names</span><span class="p">,</span> 
+            <span class="n">Y_values</span><span class="p">,</span> 
+            <span class="n">beta_values</span><span class="p">,</span> 
+            <span class="bp">self</span><span class="o">.</span><span class="n">antibody_capture_adata</span><span class="p">,</span> 
+            <span class="n">radius</span><span class="o">=</span><span class="n">radius</span><span class="p">,</span>
+            <span class="n">max_workers</span><span class="o">=</span><span class="n">max_workers</span><span class="p">,</span>
+            <span class="n">checkpoint_interval</span><span class="o">=</span><span class="n">checkpoint_interval</span><span class="p">,</span>
+            <span class="n">output_dir</span><span class="o">=</span><span class="n">finetune_output_dir</span><span class="p">,</span>
+            <span class="n">rerun</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">beta_vary</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">tolerance</span><span class="o">=</span><span class="n">tolerance</span><span class="p">,</span>
+            <span class="n">max_iterations</span><span class="o">=</span><span class="n">max_iterations</span><span class="p">,</span>
+            <span class="n">lambda_reg</span><span class="o">=</span><span class="n">lambda_reg</span><span class="p">,</span>
+            <span class="n">alpha</span><span class="o">=</span><span class="n">alpha</span><span class="p">,</span>
+            <span class="n">max_y_change</span><span class="o">=</span><span class="n">max_y_change</span>
+        <span class="p">)</span>
+
+        <span class="n">spot_names</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">antibody_capture_adata</span><span class="o">.</span><span class="n">obs_names</span>
+        
+        <span class="n">global_cell_type_proportions_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">Y_values</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">spot_names</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">cell_type_names</span><span class="p">)</span>
+        <span class="n">finetuned_cell_type_proportions_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">Y_prev</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">spot_names</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">cell_type_names</span><span class="p">)</span>
+
+        <span class="n">global_cell_type_proportions_df</span> <span class="o">=</span> <span class="n">global_cell_type_proportions_df</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span>
+        <span class="n">finetuned_cell_type_proportions_df</span> <span class="o">=</span> <span class="n">finetuned_cell_type_proportions_df</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span>
+        
+        <span class="n">global_cell_type_proportions_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">output_folder</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">sample_name</span><span class="si">}</span><span class="s2">_cell_prop_global_results.csv&quot;</span><span class="p">))</span>
+        <span class="n">finetuned_cell_type_proportions_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">output_folder</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">sample_name</span><span class="si">}</span><span class="s2">_cell_prop_finetuned_results.csv&quot;</span><span class="p">))</span>
+
+        <span class="k">return</span> <span class="n">global_cell_type_proportions_df</span><span class="p">,</span> <span class="n">finetuned_cell_type_proportions_df</span></div>
+
+<div class="viewcode-block" id="CitegeistModel.run_cell_expression_pass1"><a class="viewcode-back" href="../api.html#citegeist_model.CitegeistModel.run_cell_expression_pass1">[docs]</a>    <span class="k">def</span> <span class="nf">run_cell_expression_pass1</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">radius</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">lambda_reg_gex</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span>
+                                <span class="n">global_enrichment_weight</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">local_enrichment_weight</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+                                <span class="n">max_workers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">checkpoint_interval</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+                                <span class="n">output_dir</span><span class="o">=</span><span class="s2">&quot;checkpoints&quot;</span><span class="p">,</span> <span class="n">rerun</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Run first pass of gene expression deconvolution.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            radius (float): Radius for neighbor detection</span>
+<span class="sd">            alpha (float): Weight for spatial regularization</span>
+<span class="sd">            lambda_reg_gex (float): Weight for gene expression regularization</span>
+<span class="sd">            global_enrichment_weight (float): Weight for global expression enrichment (0-1)</span>
+<span class="sd">            local_enrichment_weight (float): Weight for local expression enrichment (0-1)</span>
+<span class="sd">            max_workers (int, optional): Maximum number of parallel workers</span>
+<span class="sd">            checkpoint_interval (int): Number of spots between checkpoints</span>
+<span class="sd">            output_dir (str): Directory for checkpoints</span>
+<span class="sd">            rerun (bool): Whether to rerun if results exist</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict[str, Any]: {</span>
+<span class="sd">                &#39;spotwise_profiles&#39;: Dict[int, np.ndarray],</span>
+<span class="sd">                &#39;dimensions&#39;: Tuple[int, int, int]</span>
+<span class="sd">            }</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">preprocessed_gex</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Gene expression data not preprocessed. Run preprocess_gex() first.&quot;</span><span class="p">)</span>
+
+        <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Starting Pass 1: Error minimization with enrichment weights...&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Gene expression data has not been split. Run `split_adata` first.&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="s1">&#39;cell_prop&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">results</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;cell_prop&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Cell proportions not computed. Run cell proportion model first.&quot;</span><span class="p">)</span>
+
+        <span class="n">cell_props_values</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;cell_prop&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+
+        <span class="c1"># Diagnostic check for low or zero cell proportions</span>
+        <span class="n">total_props_per_spot</span> <span class="o">=</span> <span class="n">cell_props_values</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">zero_prop_spots</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">total_props_per_spot</span> <span class="o">&lt;</span> <span class="mf">1e-9</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">zero_prop_spots</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;Found </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">zero_prop_spots</span><span class="p">)</span><span class="si">}</span><span class="s2"> spots with zero or negligible total cell proportions. &quot;</span>
+                <span class="sa">f</span><span class="s2">&quot;Deconvolution for these spots may fail and their profiles will be imputed as zeros. &quot;</span>
+                <span class="sa">f</span><span class="s2">&quot;Example spot indices: </span><span class="si">{</span><span class="n">zero_prop_spots</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="p">)</span>
+
+        <span class="n">spotwise_profiles</span> <span class="o">=</span> <span class="n">optimize_gene_expression</span><span class="p">(</span>
+            <span class="n">sample_name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">sample_name</span><span class="p">,</span>
+            <span class="n">deconvolution_expression_data</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">X</span><span class="p">,</span>
+            <span class="n">cell_type_numbers_array</span><span class="o">=</span><span class="n">cell_props_values</span><span class="p">,</span>
+            <span class="n">filtered_adata</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="p">,</span>
+            <span class="n">radius</span><span class="o">=</span><span class="n">radius</span><span class="p">,</span>
+            <span class="n">global_enrichment_weight</span><span class="o">=</span><span class="n">global_enrichment_weight</span><span class="p">,</span>
+            <span class="n">local_enrichment_weight</span><span class="o">=</span><span class="n">local_enrichment_weight</span><span class="p">,</span>
+            <span class="n">global_prior</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>  <span class="c1"># No prior in pass 1</span>
+            <span class="n">lambda_prior_weight</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>  <span class="c1"># No prior weight in pass 1</span>
+            <span class="n">max_workers</span><span class="o">=</span><span class="n">max_workers</span><span class="p">,</span>
+            <span class="n">checkpoint_interval</span><span class="o">=</span><span class="n">checkpoint_interval</span><span class="p">,</span>
+            <span class="n">output_dir</span><span class="o">=</span><span class="n">output_dir</span><span class="p">,</span>
+            <span class="n">rerun</span><span class="o">=</span><span class="n">rerun</span>
+        <span class="p">)</span>
+
+        <span class="c1"># Get dimensions for NaN imputation and consistency checks</span>
+        <span class="n">N</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># number of spots</span>
+        <span class="n">T</span> <span class="o">=</span> <span class="n">cell_props_values</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># number of cell types</span>
+        <span class="n">M</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># number of genes</span>
+        <span class="n">dimensions</span> <span class="o">=</span> <span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">M</span><span class="p">)</span>
+
+        <span class="c1"># Impute spots that failed to converge (NaN spots)</span>
+        <span class="n">nan_spots</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">)</span> <span class="k">if</span> <span class="n">i</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">spotwise_profiles</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">nan_spots</span><span class="p">:</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">nan_spots</span><span class="p">)</span><span class="si">}</span><span class="s2"> spots that failed to converge. Starting imputation...&quot;</span><span class="p">)</span>
+
+            <span class="n">imputed_count</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="n">zero_profile</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">T</span><span class="p">,</span> <span class="n">M</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+
+            <span class="k">for</span> <span class="n">spot_idx</span> <span class="ow">in</span> <span class="n">nan_spots</span><span class="p">:</span>
+                <span class="c1"># Prioritize imputing with zeros if cell proportions are negligible</span>
+                <span class="k">if</span> <span class="n">total_props_per_spot</span><span class="p">[</span><span class="n">spot_idx</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mf">1e-9</span><span class="p">:</span>
+                    <span class="n">spotwise_profiles</span><span class="p">[</span><span class="n">spot_idx</span><span class="p">]</span> <span class="o">=</span> <span class="n">zero_profile</span>
+                    <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Imputed spot </span><span class="si">{</span><span class="n">spot_idx</span><span class="si">}</span><span class="s2"> with a zero profile due to negligible cell proportions.&quot;</span><span class="p">)</span>
+                    <span class="n">imputed_count</span> <span class="o">+=</span> <span class="mi">1</span>
+                    <span class="k">continue</span>
+
+                <span class="c1"># Otherwise, use neighbor-based imputation</span>
+                <span class="n">neighbor_indices</span> <span class="o">=</span> <span class="n">get_neighbors_with_fixed_radius</span><span class="p">(</span>
+                    <span class="n">spot_idx</span><span class="p">,</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="p">,</span>
+                    <span class="n">radius</span><span class="o">=</span><span class="n">radius</span><span class="p">,</span>
+                    <span class="n">include_center</span><span class="o">=</span><span class="kc">False</span>
+                <span class="p">)</span>
+
+                <span class="c1"># Corrected key usage: use integer keys consistently</span>
+                <span class="n">neighbor_profiles</span> <span class="o">=</span> <span class="p">[</span>
+                    <span class="n">spotwise_profiles</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+                    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">neighbor_indices</span>
+                    <span class="k">if</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">spotwise_profiles</span>
+                <span class="p">]</span>
+
+                <span class="k">if</span> <span class="n">neighbor_profiles</span><span class="p">:</span>
+                    <span class="n">imputed_profile</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">nanmean</span><span class="p">(</span><span class="n">neighbor_profiles</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+                    <span class="n">spotwise_profiles</span><span class="p">[</span><span class="n">spot_idx</span><span class="p">]</span> <span class="o">=</span> <span class="n">imputed_profile</span>
+                    <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Imputed spot </span><span class="si">{</span><span class="n">spot_idx</span><span class="si">}</span><span class="s2"> using </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">neighbor_profiles</span><span class="p">)</span><span class="si">}</span><span class="s2"> neighbors.&quot;</span><span class="p">)</span>
+                    <span class="n">imputed_count</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;No valid neighbors found to impute spot </span><span class="si">{</span><span class="n">spot_idx</span><span class="si">}</span><span class="s2">. It will be filled with zeros as a fallback.&quot;</span><span class="p">)</span>
+                    <span class="n">spotwise_profiles</span><span class="p">[</span><span class="n">spot_idx</span><span class="p">]</span> <span class="o">=</span> <span class="n">zero_profile</span>  <span class="c1"># Fallback to prevent downstream errors</span>
+                    <span class="n">imputed_count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+            <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Finished imputation. </span><span class="si">{</span><span class="n">imputed_count</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">nan_spots</span><span class="p">)</span><span class="si">}</span><span class="s2"> failed spots were imputed.&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Final check for any remaining NaNs, though the logic above should prevent this</span>
+        <span class="n">final_nan_spots</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">)</span> <span class="k">if</span> <span class="n">i</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">spotwise_profiles</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">final_nan_spots</span><span class="p">:</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;FATAL: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">final_nan_spots</span><span class="p">)</span><span class="si">}</span><span class="s2"> spots could not be imputed: </span><span class="si">{</span><span class="n">final_nan_spots</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span><span class="si">}</span><span class="s2">. Check imputation logic.&quot;</span><span class="p">)</span>
+            <span class="c1"># This case should ideally not be reached. Raising an error might be appropriate.</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;Failed to impute all necessary spot profiles.&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Store first pass results</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;gene_expression_pass1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">spotwise_profiles</span>
+
+        <span class="c1"># Save and evaluate results</span>
+        <span class="n">parquet_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">output_folder</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">sample_name</span><span class="si">}</span><span class="s2">_gene_expression_pass1.parquet&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_save_profiles_to_parquet</span><span class="p">(</span><span class="n">spotwise_profiles</span><span class="p">,</span> <span class="n">parquet_path</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">append_gex_to_adata</span><span class="p">(</span><span class="n">pass_number</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+        <span class="n">layer_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">output_folder</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">sample_name</span><span class="si">}</span><span class="s2">_pass1/layers&quot;</span><span class="p">)</span>
+        <span class="n">export_anndata_layers</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="p">,</span> <span class="n">layer_dir</span><span class="p">,</span> <span class="n">pass_number</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s1">&#39;spotwise_profiles&#39;</span><span class="p">:</span> <span class="n">spotwise_profiles</span><span class="p">,</span>
+            <span class="s1">&#39;dimensions&#39;</span><span class="p">:</span> <span class="n">dimensions</span>
+        <span class="p">}</span></div>
+
+<div class="viewcode-block" id="CitegeistModel.compute_expression_prior"><a class="viewcode-back" href="../api.html#citegeist_model.CitegeistModel.compute_expression_prior">[docs]</a>    <span class="k">def</span> <span class="nf">compute_expression_prior</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> 
+        <span class="n">spotwise_profiles_pass1</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">],</span>
+        <span class="n">cell_type_numbers_array</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
+        <span class="n">lambda_prior</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span>
+        <span class="n">min_expression_threshold</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.1</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Compute global prior from pass 1 results.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            spotwise_profiles_pass1: Dictionary mapping spot indices to profile matrices</span>
+<span class="sd">            cell_type_numbers_array: Array of cell type proportions (N_spots × T_celltypes)</span>
+<span class="sd">            lambda_prior: Strength of prior influence (default: 1.0)</span>
+<span class="sd">            min_expression_threshold: Minimum expression to consider &quot;active&quot; (default: 0.1)</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict[str, Any]: {</span>
+<span class="sd">                &#39;global_prior&#39;: np.ndarray,  # shape (T_celltypes, M_genes)</span>
+<span class="sd">                &#39;confidence_scores&#39;: np.ndarray,  # shape (T_celltypes, M_genes)</span>
+<span class="sd">                &#39;expression_patterns&#39;: Dict containing detailed statistics</span>
+<span class="sd">            }</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">preprocessed_gex</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Gene expression data not preprocessed. Run preprocess_gex() first.&quot;</span><span class="p">)</span>
+
+        <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Computing prior from pass 1 results...&quot;</span><span class="p">)</span>
+        
+        <span class="c1"># Get gene and cell type names for validation</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Gene expression data not available&quot;</span><span class="p">)</span>
+        <span class="n">gene_names</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">var_names</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">cell_profile_dict</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Cell profile dictionary not loaded. Run load_cell_profile_dict() first.&quot;</span><span class="p">)</span>
+        <span class="n">cell_type_names</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cell_profile_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+        
+        <span class="c1"># Compute global prior with new approach</span>
+        <span class="n">prior_info</span> <span class="o">=</span> <span class="n">compute_global_prior</span><span class="p">(</span>
+            <span class="n">spotwise_profiles_pass1</span><span class="p">,</span>
+            <span class="n">cell_type_numbers_array</span><span class="p">,</span>
+            <span class="n">lambda_prior</span><span class="o">=</span><span class="n">lambda_prior</span><span class="p">,</span>
+            <span class="n">min_expression_threshold</span><span class="o">=</span><span class="n">min_expression_threshold</span>
+        <span class="p">)</span>
+        
+        <span class="c1"># Validate prior shape</span>
+        <span class="n">T</span> <span class="o">=</span> <span class="n">cell_type_numbers_array</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># num cell types</span>
+        <span class="n">M</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># num genes</span>
+        
+        <span class="k">if</span> <span class="n">prior_info</span><span class="p">[</span><span class="s1">&#39;global_prior&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span> <span class="o">!=</span> <span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">M</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Prior shape </span><span class="si">{</span><span class="n">prior_info</span><span class="p">[</span><span class="s1">&#39;global_prior&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2"> does not match expected (</span><span class="si">{</span><span class="n">T</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">M</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+        
+        <span class="c1"># Log detailed statistics about the prior</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Prior computation details:&quot;</span><span class="p">)</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Number of cell types: </span><span class="si">{</span><span class="n">T</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Number of genes: </span><span class="si">{</span><span class="n">M</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        
+        <span class="c1"># Per cell-type statistics</span>
+        <span class="k">for</span> <span class="n">t</span><span class="p">,</span> <span class="n">cell_type</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">cell_type_names</span><span class="p">):</span>
+            <span class="n">mean_conf</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">prior_info</span><span class="p">[</span><span class="s1">&#39;confidence_scores&#39;</span><span class="p">][</span><span class="n">t</span><span class="p">])</span>
+            <span class="n">strong_signals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">prior_info</span><span class="p">[</span><span class="s1">&#39;global_prior&#39;</span><span class="p">][</span><span class="n">t</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">0.5</span><span class="p">)</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="si">{</span><span class="n">cell_type</span><span class="si">}</span><span class="s2">:&quot;</span><span class="p">)</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot; - Mean confidence score: </span><span class="si">{</span><span class="n">mean_conf</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot; - % Strong signals: </span><span class="si">{</span><span class="mi">100</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">strong_signals</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+            
+            <span class="c1"># Expression pattern summary</span>
+            <span class="n">mean_exp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">prior_info</span><span class="p">[</span><span class="s1">&#39;expression_patterns&#39;</span><span class="p">][</span><span class="s1">&#39;mean_expression&#39;</span><span class="p">][</span><span class="n">t</span><span class="p">])</span>
+            <span class="n">freq</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">prior_info</span><span class="p">[</span><span class="s1">&#39;expression_patterns&#39;</span><span class="p">][</span><span class="s1">&#39;expression_frequency&#39;</span><span class="p">][</span><span class="n">t</span><span class="p">])</span>
+            <span class="n">cons</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">prior_info</span><span class="p">[</span><span class="s1">&#39;expression_patterns&#39;</span><span class="p">][</span><span class="s1">&#39;expression_consistency&#39;</span><span class="p">][</span><span class="n">t</span><span class="p">])</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot; - Mean expression: </span><span class="si">{</span><span class="n">mean_exp</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot; - Mean expression frequency: </span><span class="si">{</span><span class="n">freq</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot; - Mean expression consistency: </span><span class="si">{</span><span class="n">cons</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        
+        <span class="k">return</span> <span class="n">prior_info</span></div>
+
+
+    <span class="k">def</span> <span class="nf">_save_profiles_to_parquet</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">profiles</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Helper method to save profiles to parquet format with consistent naming.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">profiles</span><span class="p">:</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;No profiles to save.&quot;</span><span class="p">)</span>
+            <span class="k">return</span>
+        
+        <span class="n">N</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">profiles</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="n">T</span> <span class="o">=</span> <span class="n">profiles</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">M</span> <span class="o">=</span> <span class="n">profiles</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">cell_profile_dict</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Cell profile dictionary not loaded. Run load_cell_profile_dict() first.&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Get cell type names from the dictionary</span>
+        <span class="n">cell_type_names</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cell_profile_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+        
+        <span class="c1"># Create combined matrix with proper cell type names and spot formatting</span>
+        <span class="n">spot_celltype_indices</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Gene expression data not available&quot;</span><span class="p">)</span>
+
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+            <span class="n">spot_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">obs_names</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>  <span class="c1"># Use actual spot names from AnnData</span>
+            <span class="k">for</span> <span class="n">cell_type</span> <span class="ow">in</span> <span class="n">cell_type_names</span><span class="p">:</span>
+                <span class="n">spot_celltype_indices</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">spot_name</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">cell_type</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        
+        <span class="n">gene_names</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">var_names</span>
+        <span class="n">nan_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">((</span><span class="n">T</span><span class="p">,</span> <span class="n">M</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
+        <span class="n">data_combined</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">([</span>
+            <span class="n">profiles</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">nan_matrix</span><span class="p">)</span> 
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+        <span class="p">])</span>
+        
+        <span class="c1"># Create DataFrame</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+            <span class="n">data_combined</span><span class="p">,</span> 
+            <span class="n">index</span><span class="o">=</span><span class="n">spot_celltype_indices</span><span class="p">,</span> 
+            <span class="n">columns</span><span class="o">=</span><span class="n">gene_names</span>
+        <span class="p">)</span>
+        
+        <span class="n">df</span><span class="o">.</span><span class="n">to_parquet</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">compression</span><span class="o">=</span><span class="s2">&quot;gzip&quot;</span><span class="p">)</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Saved profiles to </span><span class="si">{</span><span class="n">path</span><span class="si">}</span><span class="s2"> with cell types: </span><span class="si">{</span><span class="n">cell_type_names</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<div class="viewcode-block" id="CitegeistModel.append_proportions_to_adata"><a class="viewcode-back" href="../api.html#citegeist_model.CitegeistModel.append_proportions_to_adata">[docs]</a>    <span class="k">def</span> <span class="nf">append_proportions_to_adata</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">proportions_path</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="s1">&#39;finetuned&#39;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Append cell type proportions to AnnData object.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">proportions_path</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">proportions_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">output_folder</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">sample_name</span><span class="si">}</span><span class="s1">_cell_prop_</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s1">_results.csv&#39;</span><span class="p">)</span>
+
+        <span class="c1"># Load proportions CSV</span>
+        <span class="n">spot_by_celltype_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">proportions_path</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Gene expression data not available&quot;</span><span class="p">)</span>
+        
+        <span class="c1"># Debug prints before sorting</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Before sorting:&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CSV spots 1-10:&quot;</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="n">spot_by_celltype_df</span><span class="o">.</span><span class="n">index</span><span class="p">[:</span><span class="mi">10</span><span class="p">]))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;AnnData spots 1-10:&quot;</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">obs_names</span><span class="p">[:</span><span class="mi">10</span><span class="p">]))</span>
+        
+        <span class="k">if</span> <span class="s1">&#39;spot_&#39;</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">spot_by_celltype_df</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+            <span class="c1"># Sort both numerically by the spot number</span>
+            <span class="k">def</span> <span class="nf">get_spot_number</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+                <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;spot_&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">])</span>
+            
+            <span class="c1"># Sort using reindex instead of sort_index</span>
+            <span class="n">sorted_csv_idx</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">spot_by_celltype_df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">get_spot_number</span><span class="p">)</span>
+            <span class="n">sorted_adata_idx</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">obs_names</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">get_spot_number</span><span class="p">)</span>
+            
+            <span class="n">spot_by_celltype_df</span> <span class="o">=</span> <span class="n">spot_by_celltype_df</span><span class="o">.</span><span class="n">reindex</span><span class="p">(</span><span class="n">sorted_csv_idx</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="p">[</span><span class="n">sorted_adata_idx</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+            
+            <span class="c1"># Debug prints after sorting</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">After sorting:&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CSV spots 1-10:&quot;</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="n">spot_by_celltype_df</span><span class="o">.</span><span class="n">index</span><span class="p">[:</span><span class="mi">10</span><span class="p">]))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;AnnData spots 1-10:&quot;</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">obs_names</span><span class="p">[:</span><span class="mi">10</span><span class="p">]))</span>
+        
+        <span class="c1"># Check if indices match after sorting</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">all</span><span class="p">(</span><span class="n">spot_by_celltype_df</span><span class="o">.</span><span class="n">index</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">obs_names</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Spot indices still don&#39;t match after sorting. Please verify your data.&quot;</span><span class="p">)</span>
+        
+        <span class="c1"># Add cell type proportions to adata.obs</span>
+        <span class="k">for</span> <span class="n">cell_type</span> <span class="ow">in</span> <span class="n">spot_by_celltype_df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">obs</span><span class="p">[</span><span class="n">cell_type</span><span class="p">]</span> <span class="o">=</span> <span class="n">spot_by_celltype_df</span><span class="p">[</span><span class="n">cell_type</span><span class="p">]</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;cell_prop&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">spot_by_celltype_df</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✅ Cell type proportions have been appended to adata.obs and results[&#39;cell_prop&#39;]&quot;</span><span class="p">)</span></div>
+        
+        
+<div class="viewcode-block" id="CitegeistModel.append_gex_to_adata"><a class="viewcode-back" href="../api.html#citegeist_model.CitegeistModel.append_gex_to_adata">[docs]</a>    <span class="k">def</span> <span class="nf">append_gex_to_adata</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parquet_path</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">pass_number</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Append gene expression layers from a Parquet file back into the gene_expression_adata object.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Gene expression data has not been split. Run `split_adata` first.&quot;</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="n">parquet_path</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">parquet_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">output_folder</span><span class="p">,</span> 
+                <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">sample_name</span><span class="si">}</span><span class="s2">_gene_expression_pass</span><span class="si">{</span><span class="n">pass_number</span><span class="si">}</span><span class="s2">.parquet&quot;</span>
+            <span class="p">)</span>
+
+        <span class="c1"># Step 1: Read the Parquet file into a pandas DataFrame</span>
+        <span class="n">table</span> <span class="o">=</span> <span class="n">pq</span><span class="o">.</span><span class="n">read_table</span><span class="p">(</span><span class="n">parquet_path</span><span class="p">)</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">table</span><span class="o">.</span><span class="n">to_pandas</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Parquet file for pass </span><span class="si">{</span><span class="n">pass_number</span><span class="si">}</span><span class="s2"> loaded successfully.&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Step 2: Reset the index to extract &#39;Spot&#39; and &#39;CellType&#39;</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+        <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Spot&#39;</span><span class="p">,</span> <span class="s1">&#39;CellType&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;index&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">rsplit</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;index&#39;</span><span class="p">])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Spot and CellType successfully split.&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Debug print spot names</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Spot name formats:&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;AnnData spot names format:&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">obs_names</span><span class="p">[:</span><span class="mi">5</span><span class="p">])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Parquet spot names format:&quot;</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Spot&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()[:</span><span class="mi">5</span><span class="p">])</span>
+
+        <span class="c1"># Get cell type names from the dictionary for validation</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">cell_profile_dict</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Cell profile dictionary not loaded. Run load_cell_profile_dict() first.&quot;</span><span class="p">)</span>
+        
+        <span class="n">expected_cell_types</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cell_profile_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+        <span class="n">found_cell_types</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;CellType&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
+        
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">found_cell_types</span><span class="o">.</span><span class="n">issubset</span><span class="p">(</span><span class="n">expected_cell_types</span><span class="p">):</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found unexpected cell types: </span><span class="si">{</span><span class="n">found_cell_types</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">expected_cell_types</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Expected cell types: </span><span class="si">{</span><span class="n">expected_cell_types</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Cell type mismatch in loaded data&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Step 3: Process each cell type</span>
+        <span class="k">for</span> <span class="n">cell_type</span> <span class="ow">in</span> <span class="n">found_cell_types</span><span class="p">:</span>
+            <span class="c1"># Filter data for this cell type</span>
+            <span class="n">celltype_data</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;CellType&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">cell_type</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+            <span class="n">celltype_data</span> <span class="o">=</span> <span class="n">celltype_data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;CellType&#39;</span><span class="p">])</span>
+            
+            <span class="c1"># Ensure spot names match AnnData format</span>
+            <span class="k">if</span> <span class="s1">&#39;spot_&#39;</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">obs_names</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">celltype_data</span><span class="p">[</span><span class="s1">&#39;Spot&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;spot_&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+                <span class="n">celltype_data</span><span class="p">[</span><span class="s1">&#39;Spot&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;spot_&#39;</span> <span class="o">+</span> <span class="n">celltype_data</span><span class="p">[</span><span class="s1">&#39;Spot&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">celltype_data</span><span class="p">[</span><span class="s1">&#39;Spot&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;spot_&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span> <span class="ow">and</span> <span class="ow">not</span> <span class="s1">&#39;spot_&#39;</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">obs_names</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+                <span class="n">celltype_data</span><span class="p">[</span><span class="s1">&#39;Spot&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">celltype_data</span><span class="p">[</span><span class="s1">&#39;Spot&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;spot_&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+            
+            <span class="c1"># Set Spot as index</span>
+            <span class="n">celltype_data</span> <span class="o">=</span> <span class="n">celltype_data</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;Spot&#39;</span><span class="p">)</span>
+            
+            <span class="c1"># Verify all spots exist in AnnData</span>
+            <span class="n">missing_spots</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">celltype_data</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">-</span> <span class="nb">set</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">obs_names</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">missing_spots</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found spots in parquet that don&#39;t exist in AnnData: </span><span class="si">{</span><span class="n">missing_spots</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            
+            <span class="c1"># Create matrix with proper spot ordering</span>
+            <span class="n">celltype_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">obs_names</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">var_names</span><span class="p">)))</span>
+            <span class="k">for</span> <span class="n">spot</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">obs_names</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">spot</span> <span class="ow">in</span> <span class="n">celltype_data</span><span class="o">.</span><span class="n">index</span><span class="p">:</span>
+                    <span class="n">idx</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">obs_names</span><span class="o">.</span><span class="n">get_loc</span><span class="p">(</span><span class="n">spot</span><span class="p">)</span>
+                    <span class="n">celltype_matrix</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">=</span> <span class="n">celltype_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">spot</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+            
+            <span class="c1"># Add as layer with consistent naming</span>
+            <span class="n">layer_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">cell_type</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;_&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">_genes_pass</span><span class="si">{</span><span class="n">pass_number</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">layers</span><span class="p">[</span><span class="n">layer_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">celltype_matrix</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Added layer: </span><span class="si">{</span><span class="n">layer_name</span><span class="si">}</span><span class="s2"> (Shape: </span><span class="si">{</span><span class="n">celltype_matrix</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+
+            <span class="c1"># After adding each layer, verify it was added correctly</span>
+            <span class="k">if</span> <span class="n">layer_name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="o">.</span><span class="n">layers</span><span class="p">:</span>
+                <span class="n">logging</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Failed to add layer: </span><span class="si">{</span><span class="n">layer_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Successfully added layer: </span><span class="si">{</span><span class="n">layer_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+    
+
+<div class="viewcode-block" id="CitegeistModel.get_adata"><a class="viewcode-back" href="../api.html#citegeist_model.CitegeistModel.get_adata">[docs]</a>    <span class="k">def</span> <span class="nf">get_adata</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Retrieve the internal AnnData object for downstream analysis.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            AnnData: The internal `adata` object.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;AnnData object is not initialized in the model.&quot;</span><span class="p">)</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✅ Returning the internal AnnData object.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span></div>
+            
+
+
+<div class="viewcode-block" id="CitegeistModel.cleanup"><a class="viewcode-back" href="../api.html#citegeist_model.CitegeistModel.cleanup">[docs]</a>    <span class="k">def</span> <span class="nf">cleanup</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Free memory and clean up temporary data.&quot;&quot;&quot;</span>
+        <span class="n">cleanup_memory</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="CitegeistModel.validate_neighborhood_size"><a class="viewcode-back" href="../api.html#citegeist_model.CitegeistModel.validate_neighborhood_size">[docs]</a>    <span class="k">def</span> <span class="nf">validate_neighborhood_size</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">radius</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Gene expression data has not been split. Run `split_adata` first.&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">cell_profile_dict</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Cell profile dict has not been loaded. Run &#39;load_cell_profile_dict&#39; first.&quot;</span><span class="p">)</span>
+        <span class="n">assert_neighborhood_size</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gene_expression_adata</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">cell_profile_dict</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="n">radius</span><span class="p">,</span> <span class="n">num_spots</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span></div></div>
+        
+</pre></div>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Lee/Oesterreich Lab
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2025, Lee/Oesterreich Lab.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

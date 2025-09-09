@@ -1,0 +1,21 @@
+total 352
+drwxr-xr-x 6 dal413 alee     20 Sep  9 15:36 ./
+drwxr-xr-x 4 dal413 alee      4 Sep  9 14:09 ../
+-rw-r--r-- 1 dal413 alee 104299 Sep  9 15:27 api.html
+-rw-r--r-- 1 dal413 alee    230 Sep  9 15:36 .buildinfo
+-rw-r--r-- 1 dal413 alee  17696 Sep  9 15:36 changelog.html
+-rw-r--r-- 1 dal413 alee  18715 Sep  9 15:36 contributing.html
+drwxr-xr-x 2 dal413 alee     11 Sep  9 15:27 .doctrees/
+-rw-r--r-- 1 dal413 alee  27847 Sep  9 15:36 examples.html
+-rw-r--r-- 1 dal413 alee  24053 Sep  9 15:36 genindex.html
+-rw-r--r-- 1 dal413 alee  18789 Sep  9 15:36 index.html
+-rw-r--r-- 1 dal413 alee  18177 Sep  9 15:36 installation.html
+drwxr-xr-x 3 dal413 alee      7 Sep  9 15:24 _modules/
+-rw-r--r-- 1 dal413 alee    867 Sep  9 15:36 objects.inv
+-rw-r--r-- 1 dal413 alee  14359 Sep  9 15:36 py-modindex.html
+-rw-r--r-- 1 dal413 alee  19724 Sep  9 15:36 quickstart.html
+-rw-r--r-- 1 dal413 alee  14130 Sep  9 15:36 search.html
+-rw-r--r-- 1 dal413 alee  16214 Sep  9 15:36 searchindex.js
+drwxr-xr-x 2 dal413 alee     12 Sep  9 15:27 _sources/
+drwxr-xr-x 7 dal413 alee     24 Sep  9 14:09 _static/
+-rw-r--r-- 1 dal413 alee  23224 Sep  9 15:36 tutorial.html
