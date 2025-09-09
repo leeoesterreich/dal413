@@ -1,0 +1,12 @@
+#!/bin/sh
+# properties = {"type": "single", "rule": "GC_counts", "local": false, "input": ["/ix1/alee/LO_LAB/Personal/Daisong/Test_sample/5_mkdup/TP19-M483_FOL6151A4_S9rg.mkdp.bam"], "output": ["results_batch1/GC_counts/TP19-M483_FOL6151A4_S9rg.GC_counts.txt"], "wildcards": {"out_dir": "results_batch1", "samples": "TP19-M483_FOL6151A4_S9rg"}, "params": {"sample_name": "TP19-M483_FOL6151A4_S9rg", "mappable_regions_path": "/ix1/alee/LO_LAB/Personal/Daisong/Projects/APOLLO/shWGS/Griffin/Ref/k100_minus_exclusion_lists.mappable_regions.hg38.bed", "ref_seq": "/ix1/alee/LO_LAB/Personal/Daisong/Projects/APOLLO/shWGS/Griffin/Ref/hg38.fa", "chrom_sizes": "/ix1/alee/LO_LAB/Personal/Daisong/Projects/APOLLO/shWGS/Griffin/Ref/hg38.standard.chrom.sizes", "map_q": 20, "size_range": "15 500", "CPU": 8, "griffin_GC_counts_script": "/ix1/alee/LO_LAB/Personal/Daisong/Projects/APOLLO/shWGS/Griffin/scripts//griffin_GC_counts.py"}, "log": [], "threads": 1, "resources": {}, "jobid": 2, "cluster": {"time": "48:0:0", "mem": "8G", "ncpus": 8, "ntasks": 1, "output": "logs/cluster/GC_counts.TP19-M483_FOL6151A4_S9rg.%A.out", "JobName": "GC_counts.TP19-M483_FOL6151A4_S9rg"}}
+ cd /ix1/alee/LO_LAB/Personal/Daisong/Projects/APOLLO/shWGS/Griffin/griffin_GC_and_mappability_correction && \
+/ix1/alee/LO_LAB/Personal/Daisong/griffin_env_new/bin/python \
+-m snakemake results_batch1/GC_counts/TP19-M483_FOL6151A4_S9rg.GC_counts.txt --snakefile /ix1/alee/LO_LAB/Personal/Daisong/Projects/APOLLO/shWGS/Griffin/griffin_GC_and_mappability_correction/griffin_GC_and_mappability_correction.snakefile \
+--force -j --keep-target-files --keep-remote \
+--wait-for-files /ix1/alee/LO_LAB/Personal/Daisong/Projects/APOLLO/shWGS/Griffin/griffin_GC_and_mappability_correction/.snakemake/tmp.qdbc0irl /ix1/alee/LO_LAB/Personal/Daisong/Test_sample/5_mkdup/TP19-M483_FOL6151A4_S9rg.mkdp.bam --latency-wait 60 \
+ --attempt 1 --force-use-threads \
+--wrapper-prefix https://github.com/snakemake/snakemake-wrappers/raw/ \
+ --configfiles /ix1/alee/LO_LAB/Personal/Daisong/Projects/APOLLO/shWGS/Griffin/griffin_GC_and_mappability_correction/config/config.yaml  --allowed-rules GC_counts --nocolor --notemp --no-hooks --nolock \
+--mode 2  && touch /ix1/alee/LO_LAB/Personal/Daisong/Projects/APOLLO/shWGS/Griffin/griffin_GC_and_mappability_correction/.snakemake/tmp.qdbc0irl/2.jobfinished || (touch /ix1/alee/LO_LAB/Personal/Daisong/Projects/APOLLO/shWGS/Griffin/griffin_GC_and_mappability_correction/.snakemake/tmp.qdbc0irl/2.jobfailed; exit 1)
+
