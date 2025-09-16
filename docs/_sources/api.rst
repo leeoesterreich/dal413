@@ -1,36 +1,125 @@
 API Reference
 =============
 
-This page provides an auto-generated summary of CITEgeist's public API.
+This page provides a comprehensive reference for CITEgeist's public API, organized by workflow and functionality.
 
-CITEgeist Model
----------------
+Quick Start
+-----------
 
-The main CITEgeist model class for spatial transcriptomics analysis.
+For most users, the typical workflow involves:
 
-.. automodule:: citegeist_model
-   :members:
-   :undoc-members:
+1. **Initialize**: :class:`~citegeist_model.CitegeistModel`
+2. **Preprocess**: :meth:`~citegeist_model.CitegeistModel.split_adata`, :meth:`~citegeist_model.CitegeistModel.filter_gex`
+3. **Analyze**: :meth:`~citegeist_model.CitegeistModel.run_cell_proportion_model`
+
+Core Classes
+------------
+
+CitegeistModel
+~~~~~~~~~~~~~~
+
+The main analysis class for spatial transcriptomics deconvolution.
+
+.. autoclass:: citegeist_model.CitegeistModel
+   :members: __init__
    :show-inheritance:
 
-Gurobi Implementation
---------------------
+**Initialization & Setup**
 
-Core optimization functions using Gurobi solver.
+.. autoclass:: citegeist_model.CitegeistModel
+   :members: split_adata, load_cell_profile_dict, register_gurobi
+   :noindex:
+
+**Data Preprocessing** 
+
+.. autoclass:: citegeist_model.CitegeistModel  
+   :members: filter_gex, preprocess_gex, preprocess_antibody, copy_gex_to_protein_adata
+   :noindex:
+
+**Core Analysis Methods**
+
+.. autoclass:: citegeist_model.CitegeistModel
+   :members: run_cell_proportion_model, run_cell_expression_pass1, compute_expression_prior
+   :noindex:
+
+**Results & Export**
+
+.. autoclass:: citegeist_model.CitegeistModel
+   :members: append_proportions_to_adata, append_gex_to_adata, get_adata
+   :noindex:
+
+**Validation & Utilities**
+
+.. autoclass:: citegeist_model.CitegeistModel
+   :members: validate_neighborhood_size, cleanup
+   :noindex:
+
+**Static Methods**
+
+.. autoclass:: citegeist_model.CitegeistModel
+   :members: global_clr, row_normalize, winsorize
+   :noindex:
+
+Optimization Engine
+-------------------
+
+Low-level optimization functions (advanced users).
+
+**Cell Proportion Optimization**
 
 .. automodule:: gurobi_impl
-   :members:
-   :undoc-members:
+   :members: optimize_cell_proportions, finetune_cell_proportions, deconvolute_local_cell_proportions
    :show-inheritance:
 
-Utilities
----------
+**Gene Expression Deconvolution**
 
-Helper functions and utilities for CITEgeist.
+.. automodule:: gurobi_impl  
+   :members: optimize_gene_expression, deconvolute_spot_with_neighbors_with_prior
+   :noindex:
+
+**Prior Computation**
+
+.. automodule:: gurobi_impl
+   :members: compute_global_prior, validate_prior_effect
+   :noindex:
+
+**Data Processing**
+
+.. automodule:: gurobi_impl
+   :members: normalize_counts, scale_genes, unscale_genes, map_antibodies_to_profiles
+   :noindex:
+
+**Analysis & Logging**
+
+.. automodule:: gurobi_impl
+   :members: log_marker_gene_patterns
+   :noindex:
+
+Utility Functions
+-----------------
+
+Helper functions for analysis and validation.
+
+**Neighborhood Analysis**
 
 .. automodule:: utils
-   :members:
-   :undoc-members:
+   :members: find_fixed_radius_neighbors, get_neighbors_with_fixed_radius, plot_neighbors_with_fixed_radius, assert_neighborhood_size
    :show-inheritance:
 
+**Performance Evaluation**
 
+.. automodule:: utils
+   :members: benchmark_cell_proportions, calculate_expression_metrics
+   :noindex:
+
+**Data Export & Management**
+
+.. automodule:: utils
+   :members: export_anndata_layers, save_results_to_output
+   :noindex:
+
+**System Utilities**
+
+.. automodule:: utils
+   :members: setup_logging, cleanup_memory, validate_cell_profile_dict
+   :noindex:
