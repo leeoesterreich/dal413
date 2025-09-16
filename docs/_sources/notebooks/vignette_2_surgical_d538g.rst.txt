@@ -101,4 +101,3 @@ Related Documentation
 * :doc:`../tutorial` - Comprehensive workflow guide
 * :doc:`vignette_1_biopsy_heterogeneity` - Basic analysis workflow
 * :doc:`../api` - Complete API reference
-

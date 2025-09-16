@@ -3,6 +3,12 @@ Examples
 
 This section provides practical examples of using CITEgeist for different types of spatial transcriptomics analysis.
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Interactive Tutorials:
+
+   notebooks
+
 Basic Analysis
 --------------
 

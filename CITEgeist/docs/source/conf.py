@@ -46,7 +46,7 @@ html_theme = 'pydata_sphinx_theme'
 html_static_path = ['_static']
 
 html_theme_options = {
-    "github_url": "https://github.com/leeoesterreich/CITEgeist",
+    "github_url": "ll ghttps://github.com/leeoesterreich/CITEgeist",
     "show_nav_level": 2,
     "navigation_depth": 4,
     "show_toc_level": 2,

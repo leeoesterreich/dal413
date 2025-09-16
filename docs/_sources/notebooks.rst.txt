@@ -47,4 +47,3 @@ These notebooks use example datasets that should be available in your CITEgeist 
 * Ensure all required Python packages are installed
 
 For more information about data preparation, see the :doc:`tutorial` section.
-

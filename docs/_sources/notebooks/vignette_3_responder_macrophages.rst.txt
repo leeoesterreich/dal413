@@ -106,4 +106,3 @@ Related Documentation
 * :doc:`../tutorial` - Comprehensive workflow guide
 * :doc:`vignette_2_surgical_d538g` - Surgical sample analysis
 * :doc:`../api` - Complete API reference
-

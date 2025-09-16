@@ -101,4 +101,3 @@ Related Documentation
 * :doc:`vignette_3_responder_macrophages` - Multi-sample analysis
 * :doc:`../api` - Complete API reference
 * :doc:`../contributing` - Guidelines for sharing workflows
-
