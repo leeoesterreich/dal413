@@ -1,7 +1,20 @@
 Interactive Tutorials and Vignettes
 ====================================
 
-This section contains interactive Jupyter notebooks that demonstrate various aspects of CITEgeist analysis. These notebooks provide hands-on examples and can be downloaded and run locally.
+This section contains interactive Jupyter notebooks that demonstrate various aspects of CITEgeist analysis. These notebooks provide hands-on examples and can be run interactively in your browser or downloaded locally.
+
+.. raw:: html
+
+    <div class="admonition tip" style="margin: 20px 0;">
+    <p class="admonition-title">🚀 Try CITEgeist Interactively!</p>
+    <p>Click the <strong>Binder</strong> or <strong>Colab</strong> buttons on any vignette page to run the notebooks instantly in your browser - no installation required!</p>
+    <div style="margin: 15px 0;">
+        <a href="https://mybinder.org/v2/gh/leeoesterreich/dal413/HEAD?labpath=CITEgeist%2FCITEgeist%2FJupyter" target="_blank">
+            <img src="https://mybinder.org/badge_logo.svg" alt="Launch Binder" style="margin-right: 10px;">
+        </a>
+        <span style="color: #666;">← Launch all notebooks in Binder</span>
+    </div>
+    </div>
 
 .. toctree::
    :maxdepth: 1

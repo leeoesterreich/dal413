@@ -24,17 +24,26 @@ After completing this notebook, you will understand:
 * How to interpret cell type proportion results
 * Methods for visualizing spatial transcriptomics results
 
-Download and Run
-----------------
+Run Interactive Notebook
+-------------------------
 
 .. raw:: html
 
-    <div class="admonition note">
-    <p class="admonition-title">Interactive Notebook</p>
-    <p>Download this notebook to run it locally with your own data.</p>
+    <div style="margin: 20px 0;">
+        <a href="https://mybinder.org/v2/gh/leeoesterreich/dal413/HEAD?labpath=CITEgeist%2FCITEgeist%2FJupyter%2Fvignette_1_biopsy_heterogeneity.ipynb" target="_blank">
+            <img src="https://mybinder.org/badge_logo.svg" alt="Launch Binder" style="margin-right: 10px;">
+        </a>
+        <a href="https://colab.research.google.com/github/leeoesterreich/dal413/blob/main/CITEgeist/CITEgeist/Jupyter/vignette_1_biopsy_heterogeneity.ipynb" target="_blank">
+            <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
+        </a>
     </div>
 
-**Download the notebook**: `vignette_1_biopsy_heterogeneity.ipynb <vignette_1_biopsy_heterogeneity.ipynb>`_
+    <div class="admonition tip">
+    <p class="admonition-title">🚀 Run Interactively</p>
+    <p><strong>Binder</strong>: Click above to launch this notebook in a live, executable environment with all dependencies pre-installed. No setup required!</p>
+    <p><strong>Colab</strong>: Run in Google Colab with free GPU access. You may need to install some packages.</p>
+    <p><strong>Download</strong>: <a href="vignette_1_biopsy_heterogeneity.ipynb">Download the notebook</a> to run locally.</p>
+    </div>
 
 **Prerequisites**:
 * CITEgeist installed (see :doc:`../installation`)
