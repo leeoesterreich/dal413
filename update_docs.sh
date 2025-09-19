@@ -165,3 +165,4 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 fi
 
 print_success "Documentation update script completed successfully!"
+
